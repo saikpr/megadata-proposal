@@ -77,19 +77,19 @@ I hope to learn a lot from him during this summer.
 
 # Synopsis (max 150 words)
 
-Start your proposal with a short summary of the project, designed to convince the reviewer to read the rest of the proposal.
+##Start your proposal with a short summary of the project, designed to convince the reviewer to read the rest of the proposal.
  
 Would you like me to reduce your mundane tasks(managerial, upload etc) such as those of uploading the data to EGA Repository.
 If yes, this is the proposal for you.
 
 Let me introduce to you, mEGAdata an application (written by my mentor David) it reduces the task of making the XML, uploading of metadata etc to EGA Repository.
 
-But there is a problem of initial setup and maintainence, this is where my work will come. I will make it easier for you to get started. Hope it gives you an idea, continue reading for more information.
+But there is always a problem of initial setup and maintainence, this is where my work will come. I will make it easier for you to get started. Hope it gives you an idea, continue reading for more information.
 
 
 # Benefits to Community (max 250 words)
 
-Don't forget to make your case for a benefit to the organization, not just to yourself.  Why would Google and your organization be proud to sponsor this work? How would open source or society as a whole benefit? What cool things would be demonstrated?
+## Don't forget to make your case for a benefit to the organization, not just to yourself.  Why would Google and your organization be proud to sponsor this work? How would open source or society as a whole benefit? What cool things would be demonstrated?
 
 In Today's world, a lot of time is spend in non productive work such as arranging the data, metadata etc in directories and databases. But what is missed is that most of this work doesnot require any special skillset, still they are done by highly trained professionals who can be doing something productive with their time and return back to society. But still given the privacy concerns these tasks are done by these professionals. What if we create a application and make it easily distributable and maintainable for the user to do some of these tasks. Time saved from this can be better utilised in doing some good research work.
 
@@ -141,7 +141,7 @@ By 28 June'16, Final study should be completed and we should have a final decisi
 
 From 29 June'16 to 19th July'16, Prototyping of the solution is expected to be completed. First week to get to know of how to do the things that are required to be implemented. and next week to create a prototype.
 
-From 19 July'16 to 9 August'16, Final Solution to be implemented.
+From 19 July'16 to 9 August'16, Final Solution to be implemented and bash script generator Completed.
 
 From 10 to 23 August'16, final documentation, blogs, video(no promises), clean up and final push.
 
@@ -150,19 +150,19 @@ From 10 to 23 August'16, final documentation, blogs, video(no promises), clean u
 
 A docker or Vagrant or any other such file, which once run will pack the application and make it easier for us to access.
 
-For user: a simple script to download and create the application locally for easier uploads to EGA.
+For users: a simple script to download and create the application locally for easier uploads to EGA.
 
-What is your contingency plan for things not going to schedule? 
+## What is your contingency plan for things not going to schedule? 
 
 First, I will need to provide a detailed timeline which will be updated with achievements and/or failures. Second, possibly a weekly sync up between mentors and students, in order to provide efficient support. If required, deliverables to be redecided to avoid roadblocks and ensure that it can be completed within the time-frame.
 
-## Management of Coding Project
+# Management of Coding Project
 
-How do you propose to ensure code is submitted / tested?
+## How do you propose to ensure code is submitted / tested?
 
 I will publish a blog with demo of the minimal number of steps to get the application running. (Will try to publish a video also, but no promises)
 
-How often do you plan to commit?  What changes in commit behavior would indicate a problem?
+## How often do you plan to commit?  What changes in commit behavior would indicate a problem?
 
 I plan to push to my branch once every 3-4 days.  
 If i haven't pushed in a week and my mentor is not aware of any emergency or personal commitments, then that would indicate a problem. This should never happen.
