@@ -18,7 +18,7 @@ Table of content:
 I am a 4th Year Integrated Dual Degree Student at IIT (BHU). 
 
 
-##My Research work.
+## My Research work.
 
 I  have worked on predicting software clone evolution, we decided to take forward my previous work, part of my minor project. We analyzed methods and metrics for clone evolution on both same and different version of the software. We were able to improve by 50% over ARIMA/linear/Exponential-Smoothing methods by using a hybrid model for number series prediction. This work lead to a successfully accepted paper in “ICEECS 2015”. Further, this inspired me to look into field of data analysis, which i was eventually able to carry out during my Internship at Goldman Sachs with data science team.
 
@@ -32,7 +32,7 @@ Student postal address: House number 453, Sector - 7, Urban Estate, Gurgaon-1220
 
 Telephone(s): (+91)-860-120-1034
 
-Email(s): sainyam1994<at>gmail<dot>com; sainyam<dot>kapoor<dot>cse12<at>iitbhu<dot>ac<dot>in
+Email(s): [Sainyam Kapoor](<sainyam1994@gmail.com>), [Alterate Email](<sainyam.kapoor.cse12@itbhu.ac.in>)
 
 Other communications channels: Skype/Google+, etc. : Skype:saikpr, GitHub:saikpr, BitBucket:sainyamkapoor
 
@@ -45,7 +45,7 @@ Program: Integrated Dual Degree in Computer Science and Engineering (Bachelors a
 
 Stage of completion: Almost completed with my Bachelors Courses, partial Master credits also completed. Expected to complete by May 2017.
 
-Contact to verify: Dr. K.K. Shukla, Head, Computer Science and Engineering. (email kkshukla<dot>cse<at>iitbhu<dot>ac<dot>in )
+Contact to verify: Dr. K.K. Shukla, Head, Computer Science and Engineering. ([Dr. K.K. Shukla](<kkshukle.cse@iitbhu.ac.in>))
 
 
 # Schedule Conflicts
@@ -63,7 +63,7 @@ My college will start from last week of July (after 24th, i will be bit busy so 
 
 Mentor names: David Bujold 
 
-Mentor emails: david<dot>bujold<at>computationalgenomics<dot>ca
+Mentor emails: [David Bujold](<david.bujold@computationalgenomics.ca>) (david.bujold@computationalgenomics.ca)
 
 Mentor link_ids: 
 
@@ -77,7 +77,7 @@ I hope to learn a lot from him during this summer.
 
 # Synopsis (max 150 words)
 
-##Start your proposal with a short summary of the project, designed to convince the reviewer to read the rest of the proposal.
+### Start your proposal with a short summary of the project, designed to convince the reviewer to read the rest of the proposal.
  
 Would you like me to reduce your mundane tasks(managerial, upload etc) such as those of uploading the data to EGA Repository.
 If yes, this is the proposal for you.
@@ -89,7 +89,7 @@ But there is always a problem of initial setup and maintainence, this is where m
 
 # Benefits to Community (max 250 words)
 
-## Don't forget to make your case for a benefit to the organization, not just to yourself.  Why would Google and your organization be proud to sponsor this work? How would open source or society as a whole benefit? What cool things would be demonstrated?
+### Don't forget to make your case for a benefit to the organization, not just to yourself.  Why would Google and your organization be proud to sponsor this work? How would open source or society as a whole benefit? What cool things would be demonstrated?
 
 In Today's world, a lot of time is spend in non productive work such as arranging the data, metadata etc in directories and databases. But what is missed is that most of this work doesnot require any special skillset, still they are done by highly trained professionals who can be doing something productive with their time and return back to society. But still given the privacy concerns these tasks are done by these professionals. What if we create a application and make it easily distributable and maintainable for the user to do some of these tasks. Time saved from this can be better utilised in doing some good research work.
 
@@ -103,7 +103,7 @@ By Open-Sourcing the work, society will be motivated to reduce the time wasted b
 
 # Coding Plan & Methods
 
-## Describe in detail your plan for completing the work.  What functions will be written, how and when will you do design, how will you verify the results of your coding?  Each project is different, please make your application appropriate to the work you propose.  
+### Describe in detail your plan for completing the work.  What functions will be written, how and when will you do design, how will you verify the results of your coding?  Each project is different, please make your application appropriate to the work you propose.  
 
 First i will start by switching to an SQLite database, removing all MySQL dependencies. Making sure that the Database Schema is atleast in BCNF.
 Once the base is defined and correct, i start to port the code to Python 3.5, because python2.7 is already in maintaince. I can try to support both or completely ignore this task if the requirement is not as such.
@@ -121,7 +121,7 @@ In mean time, i will also be writing a module to be added to mEGAdata which will
 
 
 
-## Describe perceived obstacles and challenges, and how you plan to overcome them.
+### Describe perceived obstacles and challenges, and how you plan to overcome them.
 
 Flask-Stormpath, which is requirement for the project is still on python2.7 (they are waiting for facebook-python-sdk to be upgraded to python3, but they will be cutting a new release in a week or so, which will build without facebook integration [Issue #26](https://github.com/stormpath/stormpath-flask/issues/26).
 
@@ -129,7 +129,7 @@ Flask-Stormpath, which is requirement for the project is still on python2.7 (the
 # Timeline
 
 
-## Provide a detailed timeline of how you plan to spend your summer, organized by deliverables.  Don't leave testing and documentation for last, as that's almost a guarantee of a failed project. 
+### Provide a detailed timeline of how you plan to spend your summer, organized by deliverables.  Don't leave testing and documentation for last, as that's almost a guarantee of a failed project. 
 
 From April'16 to 22 May'16, survey of how this problem is solved and various pitfalls. Finalizing the Entity-Relationship Diagram.
 
@@ -146,23 +146,23 @@ From 19 July'16 to 9 August'16, Final Solution to be implemented and bash script
 From 10 to 23 August'16, final documentation, blogs, video(no promises), clean up and final push.
 
 
-## Final Deliverable:
+### Final Deliverable:
 
 A docker or Vagrant or any other such file, which once run will pack the application and make it easier for us to access.
 
 For users: a simple script to download and create the application locally for easier uploads to EGA.
 
-## What is your contingency plan for things not going to schedule? 
+### What is your contingency plan for things not going to schedule? 
 
 First, I will need to provide a detailed timeline which will be updated with achievements and/or failures. Second, possibly a weekly sync up between mentors and students, in order to provide efficient support. If required, deliverables to be redecided to avoid roadblocks and ensure that it can be completed within the time-frame.
 
 # Management of Coding Project
 
-## How do you propose to ensure code is submitted / tested?
+### How do you propose to ensure code is submitted / tested?
 
 I will publish a blog with demo of the minimal number of steps to get the application running. (Will try to publish a video also, but no promises)
 
-## How often do you plan to commit?  What changes in commit behavior would indicate a problem?
+### How often do you plan to commit?  What changes in commit behavior would indicate a problem?
 
 I plan to push to my branch once every 3-4 days.  
 If i haven't pushed in a week and my mentor is not aware of any emergency or personal commitments, then that would indicate a problem. This should never happen.
