@@ -15,7 +15,7 @@ Table of content:
 
 # Biographical Information
 
-I am a 4th Year Integrated Dual Degree Student at IIT (BHU). 
+I am a 4th Year Integrated Dual Degree Student at IIT (BHU). I am a technical enthusiast and my belief is to use coding or any activity(as such) for greater good of society or at the very least myself.
 
 
 ## My Research work.
@@ -52,12 +52,12 @@ Contact to verify: Dr. K.K. Shukla, Head, Computer Science and Engineering. ([Dr
 
 Please list any schedule conflict that will interfere with you treating your proposed C3G GCoC project as a full time job in the summer.  If you are applying to other internships, or have other commitments, list them.
 
-Presently i have no commitments for any full time job in summer.
-I have already applied to CERN Openlab intership, but its a very far fetched dream.
+Presently I have no commitments for any full time job in summers.
+I have already applied to CERN Openlab intership, but its a pretty very far fetched dream.
 
-I might go for a vacation for a period of no more than 7 days, in middle of summer (as it gets very hot in Varanasi).
+I might go for a vacation for a period of no more than 7 days, in middle of summer (as it gets scorching hot in Varanasi).
 
-My college will start from last week of July (after 24th, i will be bit busy so will be cleaning up the code and final documentation )
+My college will start from last week of July (after 24th, i will be bit busy so will be cleaning up the code and finalising the documentation )
 
 # Mentors
 
@@ -74,7 +74,6 @@ He has given me a good picture about what is to expected of me (both the small a
 I hope to learn a lot from him during this summer.
 
 
-
 # Synopsis (max 150 words)
  
 Would you like me to reduce your mundane tasks(managerial, upload etc) such as those of uploading the data to EGA Repository.
@@ -87,29 +86,30 @@ But there is always a problem of initial setup and maintainence, this is where m
 
 # Benefits to Community (max 250 words)
 
-In Today's world, a lot of time is spend in non productive work such as arranging the data, metadata etc in directories and databases. But what is missed is that most of this work doesnot require any special skillset, still they are done by highly trained professionals who can be doing something productive with their time and return back to society. But still given the privacy concerns these tasks are done by these professionals. What if we create a application and make it easily distributable and maintainable for the user to do some of these tasks. Time saved from this can be better utilised in doing some good research work.
+In Today's world, a lot of time is spend in non productive work such as arranging the data, metadata etc in directories and databases. But what is missed is that most of this work doesnot require any special skillset, still they are done by highly trained professionals who can be doing something productive with their time and return back to society. But still given the privacy concerns these tasks are done by these professionals. What if we create a application and make it easily distributable and maintainable for the user to do some of these tasks. Time saved from this can be better utilised in doing some research.
 
-Just by me spending my summer to work on this problem, some good researchers time will be saved.(which would be more valuable to the time i spend in creating the application)
+Just by me spending my summer to work on this problem, some researcher's time will be saved. Further it will reduce the risk factor involved in failure.
 
-I will be making it easier for the user to obtain a copy of the application which will be simple (one or two liner) to get started.
-and not much setup will also be required.
+I will be making it easier for the user to obtain a copy of the application which will be simple (one or two liner command) to get started and without much setup.
 
-By Open-Sourcing the work, society will be motivated to reduce the time wasted by people doing same things again and again. Today mEGAdata is being used by McGill EMC, but by making easier for others to access it, can be used by numerous other centers doing similar work. and this will also help McGill EMC, by other members adding some feature they missed or ignored. That's the beauty of open source.
+By Open-Sourcing the work, society will be motivated to reduce the time wasted in such mundane tasks. Today mEGAdata is being used by McGill EMC, but by making it easier for others to access it, can be used by numerous other centers doing similar work. and this will also help McGill EMC, as other members will add some feature which EMC must have missed or ignored. That's the beauty of open source.
 
 
 # Coding Plan & Methods
 
 ### Describe in detail your plan for completing the work.  What functions will be written, how and when will you do design, how will you verify the results of your coding?  Each project is different, please make your application appropriate to the work you propose.  
 
-First i will start by switching to an SQLite database, removing all MySQL dependencies. Making sure that the Database Schema is atleast in BCNF.
+First i will start by switching to SQLite database, removing all MySQL dependencies. Will ensure that the Database Schema is atleast in BCNF.
 Once the base is defined and correct, i start to port the code to Python 3.5, because python2.7 is already in maintaince. I can try to support both or completely ignore this task if the requirement is not as such.
 
-They i will explore VM vs Linux Containers vs docker for our task, which will be an overkill and which will be the minimal requirement.
+Then i will explore VM vs Linux Containers vs docker for our task, which will be an overkill and which will be the minimal requirement.
 Reason i want to explore Vagrant is for ability to use it over windows and linux both.
 
 I will try to answer following questions:
-*Which will help get the work done and be easier to support in Future
-*If i go with linux container, would i need a supervisory daemon or a multiple dockers running and coordinating. If supervisory daemon, would supervisord work or some other manager.
+
+	*Which will help get the work done and be easier to support in Future
+	
+	*If i go with linux container, would i need a supervisory daemon or a multiple dockers running and coordinating. If supervisory daemon, would supervisord work or some other manager.
 
 once the Study is completed, i will start to port the repository to the appropriate container(vm or docker).
 
