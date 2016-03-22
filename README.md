@@ -76,8 +76,6 @@ I hope to learn a lot from him during this summer.
 
 
 # Synopsis (max 150 words)
-
-### Start your proposal with a short summary of the project, designed to convince the reviewer to read the rest of the proposal.
  
 Would you like me to reduce your mundane tasks(managerial, upload etc) such as those of uploading the data to EGA Repository.
 If yes, this is the proposal for you.
@@ -88,8 +86,6 @@ But there is always a problem of initial setup and maintainence, this is where m
 
 
 # Benefits to Community (max 250 words)
-
-### Don't forget to make your case for a benefit to the organization, not just to yourself.  Why would Google and your organization be proud to sponsor this work? How would open source or society as a whole benefit? What cool things would be demonstrated?
 
 In Today's world, a lot of time is spend in non productive work such as arranging the data, metadata etc in directories and databases. But what is missed is that most of this work doesnot require any special skillset, still they are done by highly trained professionals who can be doing something productive with their time and return back to society. But still given the privacy concerns these tasks are done by these professionals. What if we create a application and make it easily distributable and maintainable for the user to do some of these tasks. Time saved from this can be better utilised in doing some good research work.
 
