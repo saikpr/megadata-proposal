@@ -1,23 +1,4 @@
-### Format
-The proposal should be submitted as a Markdown document, that you will make available from your public source control repository.
-
-It should include the following sections, in this particular order:
-
-* Project Info
-* Biographical Information
-* Contact Information
-* Student Affiliation
-* Schedule Conflicts
-* Mentors
-* Synopsis
-* Benefits to Community
-* Coding Plan & Methods
-* Timeline
-* Management of Coding Project
-* Test
-
-
-## Project Info
+# Project Info
 
 Project title: EGA Data Submission database (mEGAdata)
 
@@ -25,12 +6,19 @@ Project short title (30 characters): mEGAdata
 
 URL of project idea page: 
 
-## Biographical Information
+--------------
+Table of content:
+
+[TOC]
+
+--------------
+
+# Biographical Information
 
 I am a 4th Year Integrated Dual Degree Student at IIT (BHU). 
 
 
-#My Research work.
+##My Research work.
 
 I  have worked on predicting software clone evolution, we decided to take forward my previous work, part of my minor project. We analyzed methods and metrics for clone evolution on both same and different version of the software. We were able to improve by 50% over ARIMA/linear/Exponential-Smoothing methods by using a hybrid model for number series prediction. This work lead to a successfully accepted paper in “ICEECS 2015”. Further, this inspired me to look into field of data analysis, which i was eventually able to carry out during my Internship at Goldman Sachs with data science team.
 
@@ -60,7 +48,7 @@ Stage of completion: Almost completed with my Bachelors Courses, partial Master 
 Contact to verify: Dr. K.K. Shukla, Head, Computer Science and Engineering. (email kkshukla<dot>cse<at>iitbhu<dot>ac<dot>in )
 
 
-## Schedule Conflicts
+# Schedule Conflicts
 
 Please list any schedule conflict that will interfere with you treating your proposed C3G GCoC project as a full time job in the summer.  If you are applying to other internships, or have other commitments, list them.
 
@@ -71,7 +59,7 @@ I might go for a vacation for a period of no more than 7 days, in middle of summ
 
 My college will start from last week of July (after 24th, i will be bit busy so will be cleaning up the code and final documentation )
 
-## Mentors
+# Mentors
 
 Mentor names: David Bujold 
 
@@ -87,7 +75,7 @@ I hope to learn a lot from him during this summer.
 
 
 
-## Synopsis (max 150 words)
+# Synopsis (max 150 words)
 
 Start your proposal with a short summary of the project, designed to convince the reviewer to read the rest of the proposal.
  
@@ -99,7 +87,7 @@ Let me introduce to you, mEGAdata an application (written by my mentor David) it
 But there is a problem of initial setup and maintainence, this is where my work will come. I will make it easier for you to get started. Hope it gives you an idea, continue reading for more information.
 
 
-##  Benefits to Community (max 250 words)
+# Benefits to Community (max 250 words)
 
 Don't forget to make your case for a benefit to the organization, not just to yourself.  Why would Google and your organization be proud to sponsor this work? How would open source or society as a whole benefit? What cool things would be demonstrated?
 
@@ -113,9 +101,9 @@ and not much setup will also be required.
 By Open-Sourcing the work, society will be motivated to reduce the time wasted by people doing same things again and again. Today mEGAdata is being used by McGill EMC, but by making easier for others to access it, can be used by numerous other centers doing similar work. and this will also help McGill EMC, by other members adding some feature they missed or ignored. That's the beauty of open source.
 
 
-## Coding Plan & Methods
+# Coding Plan & Methods
 
-#Describe in detail your plan for completing the work.  What functions will be written, how and when will you do design, how will you verify the results of your coding?  Each project is different, please make your application appropriate to the work you propose.  
+## Describe in detail your plan for completing the work.  What functions will be written, how and when will you do design, how will you verify the results of your coding?  Each project is different, please make your application appropriate to the work you propose.  
 
 First i will start by switching to an SQLite database, removing all MySQL dependencies. Making sure that the Database Schema is atleast in BCNF.
 Once the base is defined and correct, i start to port the code to Python 3.5, because python2.7 is already in maintaince. I can try to support both or completely ignore this task if the requirement is not as such.
@@ -133,15 +121,15 @@ In mean time, i will also be writing a module to be added to mEGAdata which will
 
 
 
-#Describe perceived obstacles and challenges, and how you plan to overcome them.
+## Describe perceived obstacles and challenges, and how you plan to overcome them.
 
 Flask-Stormpath, which is requirement for the project is still on python2.7 (they are waiting for facebook-python-sdk to be upgraded to python3, but they will be cutting a new release in a week or so, which will build without facebook integration [Issue #26](https://github.com/stormpath/stormpath-flask/issues/26).
 
 
-## Timeline
+# Timeline
 
 
-Provide a detailed timeline of how you plan to spend your summer, organized by deliverables.  Don't leave testing and documentation for last, as that's almost a guarantee of a failed project. 
+## Provide a detailed timeline of how you plan to spend your summer, organized by deliverables.  Don't leave testing and documentation for last, as that's almost a guarantee of a failed project. 
 
 From April'16 to 22 May'16, survey of how this problem is solved and various pitfalls. Finalizing the Entity-Relationship Diagram.
 
@@ -158,7 +146,7 @@ From 19 July'16 to 9 August'16, Final Solution to be implemented.
 From 10 to 23 August'16, final documentation, blogs, video(no promises), clean up and final push.
 
 
-Final Deliverable:
+## Final Deliverable:
 
 A docker or Vagrant or any other such file, which once run will pack the application and make it easier for us to access.
 
@@ -179,10 +167,8 @@ How often do you plan to commit?  What changes in commit behavior would indicate
 I plan to push to my branch once every 3-4 days.  
 If i haven't pushed in a week and my mentor is not aware of any emergency or personal commitments, then that would indicate a problem. This should never happen.
 
-## Test
+# Final Test
 
 Describe the qualification test that you have submitted to you project mentors.  If feasible, include code, details, output, and example of similar coding problems that you have solved.
 
 Test will be quite simple. A simple script to be downloaded and run on a Linux system which will result in installing of a complete web portal for easier upload to EGA.
-
-## Anything Else
