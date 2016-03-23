@@ -170,7 +170,7 @@ First, I will need to provide a detailed timeline which will be updated with ach
 
 ### How do you propose to ensure code is submitted / tested?
 
-Weekly Code Reviews, and approval of Mentor before finally pushing the major branch.
+Weekly Code Reviews, and approval of Mentor before finally pushing to the main branch.
 
 I will publish a blog with demo of the minimal number of steps to get the application running. (Will try to publish a video also, but no promises)
 
@@ -181,7 +181,7 @@ If i haven't pushed in a week and my mentor is not aware of any emergency or per
 
 # Final Test
 
-Describe the qualification test that you have submitted to you project mentors.  If feasible, include code, details, output, and example of similar coding problems that you have solved.
+### Describe the qualification test that you have submitted to you project mentors.  If feasible, include code, details, output, and example of similar coding problems that you have solved.
 
 Test will be quite simple. A simple script to be downloaded and run on a Linux system which will result in installing of a complete web portal for easier upload to EGA, and will satisfy all the stated features as above.
 
