@@ -190,7 +190,7 @@ Test will be quite simple. A simple script to be downloaded and run on a Linux s
 # Additional Comments
 
 
-I would like to heartily thank David Bujold, for patiently answering several queries about the project and reviewing my selection test. He was able to point me in right direction and helped by providing ideas and action plan.
+I would like to heartily thank David Bujold, for patiently answering several queries about the project and reviewing my selection test. He was able to point me in right direction and helped by providing ideas and action plan. Thanks for bearing with my childish queries at times.
 
 ##Selection test:
     
