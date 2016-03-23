@@ -99,29 +99,30 @@ By Open-Sourcing the work, society will be motivated to reduce the time wasted i
 
 ### Describe in detail your plan for completing the work.  What functions will be written, how and when will you do design, how will you verify the results of your coding?  Each project is different, please make your application appropriate to the work you propose.  
 
-*Must Have :
-    * Switching to SQLite, removing all MySQL dependencies.
-    * Ensuring that Database Schema is in BCNF, or atleast 3NF normalised form
-    * Studing VM(Vagrant or similar) vs Linux Containers(LxC) vs Docker for portability. (Vagrant because of the ability to build on windows) (dependent on various factors such as future support, supervisory daemon or seperate dockers)
-    * Porting the Code to Python3.x(Most probably Python3.5)
-    * Web Page for Assays Metadata Management, supporting create/update/delete and validating the consistency of Database at the updation.
-    * Web Page for Sequencing runs metadata management, supporting multiple sequencing raw files, with pertaining metadata. Metadata to be stored in the database.
-    * Incorporate sample properties editor in the web application
-    * Studying various OAuth based authentication systems.
-    * Based on above study, use the best integratable and secure to application
-    * Deciding one of LxC, docker, Vagrant or any other alternative and starting the porting process.
-    * Search facility through donors, samples, datasets, and their metadata
+####Must Have :
+    
+* Switching to SQLite, removing all MySQL dependencies.
+* Ensuring that Database Schema is in BCNF, or atleast 3NF normalised form
+* Studing VM(Vagrant or similar) vs Linux Containers(LxC) vs Docker for portability. (Vagrant because of the ability to build on windows) (dependent on various factors such as future support, supervisory daemon or seperate dockers)
+* Porting the Code to Python3.x(Most probably Python3.5)
+* Web Page for Assays Metadata Management, supporting create/update/delete and validating the consistency of Database at the updation.
+* Web Page for Sequencing runs metadata management, supporting multiple sequencing raw files, with pertaining metadata. Metadata to be stored in the database.
+* Incorporate sample properties editor in the web application
+* Studying various OAuth based authentication systems.
+* Based on above study, use the best integratable and secure to application
+* Deciding one of LxC, docker, Vagrant or any other alternative and starting the porting process.
+* Search facility through donors, samples, datasets, and their metadata
 
-*Nice to Have:
-    * Module to generate BASH script with ascp, to make it easier for user to upload the raw data and its md5 to EGA.
-    * Support for both python2.7 and python3.x
-    * In Web Page for Sequencing runs metadata management, Raw data server location and md5 checkums integration service.
-    * BioPortal ontologies integration
-        * This involves using the bioportal.bioontology.org to map metadata properties to a given ontology, by creating a custom Handsontable editor.
-        * Example: A sample has a property called "Cell Type", that should map to the UBERON ontology. The custom editor will enable searching the UBERON ontology, identify the right term, and store in the database the connected ontology URI.
-        * Bioportal has several tools that can be used for these kind of features. Example for UBERON: Try searching for "B Cell"in [https://bioportal.bioontology.org/ontologies/UBERON/?p=widgets](https://bioportal.bioontology.org/ontologies/UBERON/?p=widgets).
-    * Bioinformatics downstream analysis metadata
-        * Sequencing runs need processing by various analysis software. Software with versions, parameters used, etc. need to be stored from the interface.
+####Nice to Have:
+* Module to generate BASH script with ascp, to make it easier for user to upload the raw data and its md5 to EGA.
+* Support for both python2.7 and python3.x
+* In Web Page for Sequencing runs metadata management, Raw data server location and md5 checkums integration service.
+* BioPortal ontologies integration
+    * This involves using the bioportal.bioontology.org to map metadata properties to a given ontology, by creating a custom Handsontable editor.
+    * Example: A sample has a property called "Cell Type", that should map to the UBERON ontology. The custom editor will enable searching the UBERON ontology, identify the right term, and store in the database the connected ontology URI.
+    * Bioportal has several tools that can be used for these kind of features. Example for UBERON: Try searching for "B Cell"in [https://bioportal.bioontology.org/ontologies/UBERON/?p=widgets](https://bioportal.bioontology.org/ontologies/UBERON/?p=widgets).
+* Bioinformatics downstream analysis metadata
+    * Sequencing runs need processing by various analysis software. Software with versions, parameters used, etc. need to be stored from the interface.
 
 ### Describe perceived obstacles and challenges, and how you plan to overcome them.
 
@@ -198,7 +199,7 @@ I would like to heartily thank David Bujold, for patiently answering several que
 
 Basic Implementation:
     
-* BitBucket Repo : [https://bitbucket.org/sainyamkapoor/simple_api_swag](https://bitbucket.org/sainyamkapoor/simple_api_swag)
+* BitBucket Repo : [https://bitbucket.org/sainyamkapoor/simple_api](https://bitbucket.org/sainyamkapoor/simple_api)
 * Angular JS Application : [http://api.simpleapi.ml:8080/static/index.html](http://api.simpleapi.ml:8080/static/index.html)
 * Api End point : [http://api.simpleapi.ml:8080/api/v1.0/phone](http://api.simpleapi.ml:8080/api/v1.0/phone)
 
@@ -210,7 +211,7 @@ Alternative Implementation with swagger(Recommended):
 * Swagger UI: [http://api.simpleapi.ml/api/spec.html](http://api.simpleapi.ml/api/spec.html)
     
     
-    PUT,POST,GET requests are documented in the bitbucket repo.
+PUT,POST,GET requests are documented in the bitbucket repo.
 
 -----------------------------
 -----------------------------
