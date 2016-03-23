@@ -50,7 +50,7 @@ Contact to verify: Dr. K.K. Shukla, Head, Computer Science and Engineering. ([Dr
 
 # Schedule Conflicts
 
-Please list any schedule conflict that will interfere with you treating your proposed C3G GCoC project as a full time job in the summer.  If you are applying to other internships, or have other commitments, list them.
+### Please list any schedule conflict that will interfere with you treating your proposed C3G GCoC project as a full time job in the summer.  If you are applying to other internships, or have other commitments, list them.
 
 Presently I have no commitments for any full time job in summers.
 I have already applied to CERN Openlab intership, but its a pretty very far fetched dream.
@@ -67,7 +67,7 @@ Mentor emails: [David Bujold](<david.bujold@computationalgenomics.ca>) (david.bu
 
 Mentor link_ids: 
 
-Have you been in touch with the mentors? When and how? 
+### Have you been in touch with the mentors? When and how? 
 
 I exchanged emails with David Bujold discusing about the project and the selection tests. 
 He has given me a good picture about what is to expected of me (both the small and big picture).
@@ -158,7 +158,6 @@ From 10 Aug to 24 Aug'16 ,final documentation, functional testing, blog-entry, v
 
 An easier way for users to deploy their own version of mEGAdata for upload to EGA Repository. The web application will be packed in form of a container( full vm or docker app) making it easier to deploy and maintain.
 
-
 For users: a simple script to download and create the application locally for easier uploads to EGA.
 
 Note: More definite deliverables already defined in Coding Plans & Methods
@@ -187,12 +186,9 @@ Describe the qualification test that you have submitted to you project mentors. 
 Test will be quite simple. A simple script to be downloaded and run on a Linux system which will result in installing of a complete web portal for easier upload to EGA, and will satisfy all the stated features as above.
 
 
+## Credits:
 
-
-## Additional Comments
-
-
-I would like to heartily thank David Bujold, for patiently answering several queries about the project and reviewing my selection test. He was able to point me in right direction and helped by providing ideas and action plan. Thanks for bearing with my childish queries at times.
+I would like to heartily thank David Bujold, for patiently answering queries about the project and reviewing my selection test. He was able to point me in right direction and helped me by providing ideas and action plan. Thanks for bearing with my childish queries at times.
 
 
 ### Selection test:
