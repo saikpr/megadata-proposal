@@ -99,7 +99,7 @@ By Open-Sourcing the work, society will be motivated to reduce the time wasted i
 
 ### Describe in detail your plan for completing the work.  What functions will be written, how and when will you do design, how will you verify the results of your coding?  Each project is different, please make your application appropriate to the work you propose.  
 
-##Must Have :
+*Must Have :
     * Switching to SQLite, removing all MySQL dependencies.
     * Ensuring that Database Schema is in BCNF, or atleast 3NF normalised form
     * Studing VM(Vagrant or similar) vs Linux Containers(LxC) vs Docker for portability. (Vagrant because of the ability to build on windows) (dependent on various factors such as future support, supervisory daemon or seperate dockers)
@@ -112,7 +112,7 @@ By Open-Sourcing the work, society will be motivated to reduce the time wasted i
     * Deciding one of LxC, docker, Vagrant or any other alternative and starting the porting process.
     * Search facility through donors, samples, datasets, and their metadata
 
-##Nice to Have:
+*Nice to Have:
     * Module to generate BASH script with ascp, to make it easier for user to upload the raw data and its md5 to EGA.
     * Support for both python2.7 and python3.x
     * In Web Page for Sequencing runs metadata management, Raw data server location and md5 checkums integration service.
@@ -192,18 +192,19 @@ Test will be quite simple. A simple script to be downloaded and run on a Linux s
 
 I would like to heartily thank David Bujold, for patiently answering several queries about the project and reviewing my selection test. He was able to point me in right direction and helped by providing ideas and action plan. Thanks for bearing with my childish queries at times.
 
-##Selection test:
+*Selection test:
     
 
-    Basic Implementation:
+    *Basic Implementation:
         BitBucket Repo : [https://bitbucket.org/sainyamkapoor/simple_api_swag](https://bitbucket.org/sainyamkapoor/simple_api_swag)
         Angular JS Application : [http://api.simpleapi.ml:8080/static/index.html](http://api.simpleapi.ml:8080/static/index.html)
         Api End point : [http://api.simpleapi.ml:8080/api/v1.0/phone](http://api.simpleapi.ml:8080/api/v1.0/phone)
     
-    Alternative Implementation with swagger(Recommended):
+    *Alternative Implementation with swagger(Recommended):
         BitBucket Repo : [https://bitbucket.org/sainyamkapoor/simple_api_swag](https://bitbucket.org/sainyamkapoor/simple_api_swag)
         Angular JS Application : [http://api.simpleapi.ml/static/index.html](http://api.simpleapi.ml/static/index.html)
         Api End point : [http://api.simpleapi.ml/api/v1.0/phone](http://api.simpleapi.ml/api/v1.0/phone)
         Swagger UI: [http://api.simpleapi.ml/api/spec.html](http://api.simpleapi.ml/api/spec.html)
         
+    
     PUT,POST,GET requests are documented in the bitbucket repo.
