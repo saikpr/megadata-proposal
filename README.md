@@ -160,7 +160,7 @@ An easier way for users to deploy their own version of mEGAdata for upload to EG
 
 For users: a simple script to download and create the application locally for easier uploads to EGA.
 
-Note: More definite deliverables already defined in Coding Plans & Methods
+Note: More defined deliverables have already been listed in Coding Plans & Methods.
 
 ### What is your contingency plan for things not going to schedule? 
 
