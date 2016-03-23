@@ -79,9 +79,9 @@ I hope to learn a lot from him during this summer.
 Would you like me to reduce your mundane tasks(managerial, upload etc) such as those of uploading the data to EGA Repository.
 If yes, this is the proposal for you.
 
-Let me introduce to you, mEGAdata an application (written by my mentor David) it reduces the task of making the XML, uploading of metadata etc to EGA Repository.
+Let me introduce to you, mEGAdata which is a database-driven lightweight web application for archiving genomics projects metadata on samples and experiments, with the goal of easing submission to the [European Genome-phenome Archive (EGA)](https://www.ebi.ac.uk/ega/home).
 
-But there is always a problem of initial setup and maintainence, this is where my work will come. I will make it easier for you to get started. Hope it gives you an idea, continue reading for more information.
+But there is always a problem of initial setup and maintainence(end users favor packages that are functional and easy to install!), this is where my work will come. I will make it easier to get started. Hope it gives you an idea, continue reading for more information.
 
 
 # Benefits to Community (max 250 words)
@@ -99,27 +99,34 @@ By Open-Sourcing the work, society will be motivated to reduce the time wasted i
 
 ### Describe in detail your plan for completing the work.  What functions will be written, how and when will you do design, how will you verify the results of your coding?  Each project is different, please make your application appropriate to the work you propose.  
 
-First i will start by switching to SQLite database, removing all MySQL dependencies. Will ensure that the Database Schema is atleast in BCNF.
-Once the base is defined and correct, i start to port the code to Python 3.5, because python2.7 is already in maintaince. I can try to support both or completely ignore this task if the requirement is not as such.
+##Must Have :
+    * Switching to SQLite, removing all MySQL dependencies.
+    * Ensuring that Database Schema is in BCNF, or atleast 3NF normalised form
+    * Studing VM(Vagrant or similar) vs Linux Containers(LxC) vs Docker for portability. (Vagrant because of the ability to build on windows) (dependent on various factors such as future support, supervisory daemon or seperate dockers)
+    * Porting the Code to Python3.x(Most probably Python3.5)
+    * Web Page for Assays Metadata Management, supporting create/update/delete and validating the consistency of Database at the updation.
+    * Web Page for Sequencing runs metadata management, supporting multiple sequencing raw files, with pertaining metadata. Metadata to be stored in the database.
+    * Incorporate sample properties editor in the web application
+    * Studying various OAuth based authentication systems.
+    * Based on above study, use the best integratable and secure to application
+    * Deciding one of LxC, docker, Vagrant or any other alternative and starting the porting process.
+    * Search facility through donors, samples, datasets, and their metadata
 
-Then i will explore VM vs Linux Containers vs docker for our task, which will be an overkill and which will be the minimal requirement.
-Reason i want to explore Vagrant is for ability to use it over windows and linux both.
-
-I will try to answer following questions:
-
-	*Which will help get the work done and be easier to support in Future
-	
-	*If i go with linux container, would i need a supervisory daemon or a multiple dockers running and coordinating. If supervisory daemon, would supervisord work or some other manager.
-
-once the Study is completed, i will start to port the repository to the appropriate container(vm or docker).
-
-In mean time, i will also be writing a module to be added to mEGAdata which will create a BASH script with ascp, to make it easier for User to upload md5 and data to EGA.
-
-
+##Nice to Have:
+    * Module to generate BASH script with ascp, to make it easier for user to upload the raw data and its md5 to EGA.
+    * Support for both python2.7 and python3.x
+    * In Web Page for Sequencing runs metadata management, Raw data server location and md5 checkums integration service.
+    * BioPortal ontologies integration
+        * This involves using the bioportal.bioontology.org to map metadata properties to a given ontology, by creating a custom Handsontable editor.
+        * Example: A sample has a property called "Cell Type", that should map to the UBERON ontology. The custom editor will enable searching the UBERON ontology, identify the right term, and store in the database the connected ontology URI.
+        * Bioportal has several tools that can be used for these kind of features. Example for UBERON: Try searching for "B Cell"in [https://bioportal.bioontology.org/ontologies/UBERON/?p=widgets](https://bioportal.bioontology.org/ontologies/UBERON/?p=widgets).
+    * Bioinformatics downstream analysis metadata
+        * Sequencing runs need processing by various analysis software. Software with versions, parameters used, etc. need to be stored from the interface.
 
 ### Describe perceived obstacles and challenges, and how you plan to overcome them.
 
-Flask-Stormpath, which is requirement for the project is still on python2.7 (they are waiting for facebook-python-sdk to be upgraded to python3, but they will be cutting a new release in a week or so, which will build without facebook integration [Issue #26](https://github.com/stormpath/stormpath-flask/issues/26).
+Flask-Stormpath, which is requirement for the project is still on python2.7 (they are waiting for facebook-python-sdk to be upgraded to python3, but they will be cutting a new release in a week or so, which will build without facebook integration [Issue #26](https://github.com/stormpath/stormpath-flask/issues/26). Possibly shift to some other OAuth based authentication system.
+
 
 
 # Timeline
@@ -127,44 +134,76 @@ Flask-Stormpath, which is requirement for the project is still on python2.7 (the
 
 ### Provide a detailed timeline of how you plan to spend your summer, organized by deliverables.  Don't leave testing and documentation for last, as that's almost a guarantee of a failed project. 
 
-From April'16 to 22 May'16, survey of how this problem is solved and various pitfalls. Finalizing the Entity-Relationship Diagram.
+From April'16 to 22 May'16, survey of OAuth-based authentication systems, possible sample properties editor, VM(Vagrant or similar) vs Linux Containers(LxC) vs Docker for portability study, and designing the Entity-Relationship Diagram for the final application.
 
 From 22 May'16 to 5 June'16, SQlite migration should be completed.
 
-From 6 June'16 to 19 June'16, Major python3.5 porting should be completed.
+From 6 June'16 to 12 June'16, Major python3.5 porting should be completed.
 
-By 28 June'16, Final study should be completed and we should have a final decision on which to implement and how.
+From 12 June'16 to 28th June'16, Web Page for Assays Metadata Management
 
-From 29 June'16 to 19th July'16, Prototyping of the solution is expected to be completed. First week to get to know of how to do the things that are required to be implemented. and next week to create a prototype.
+By 28 June'16, I should have completed 50% of the activities. Documentation and unit testing of all modules which have be done should be ready
 
-From 19 July'16 to 9 August'16, Final Solution to be implemented and bash script generator Completed.
+From 29 June'16 to 5th July'16, Web Page for Sequencing runs metadata management.
 
-From 10 to 23 August'16, final documentation, blogs, video(no promises), clean up and final push.
+From 5 July'16 to 24 July'16, OAuth based authentication systems, BASH script with ascp, global searching
+
+From 24 July to 10 August'16, Incorporate sample properties editor, finally containerizing the application
+
+From 10 Aug to 24 Aug'16 ,final documentation, functional testing, blog-entry, video(no promises), clean up and final push.
 
 
 ### Final Deliverable:
 
-A docker or Vagrant or any other such file, which once run will pack the application and make it easier for us to access.
+An easier way for users to deploy their own version of mEGAdata for upload to EGA Repository. The web application will be packed in form of a container( full vm or docker app) making it easier to deploy and maintain.
+
 
 For users: a simple script to download and create the application locally for easier uploads to EGA.
 
+Note: More definite deliverables already defined in Coding Plans & Methods
+
 ### What is your contingency plan for things not going to schedule? 
 
-First, I will need to provide a detailed timeline which will be updated with achievements and/or failures. Second, possibly a weekly sync up between mentors and students, in order to provide efficient support. If required, deliverables to be redecided to avoid roadblocks and ensure that it can be completed within the time-frame.
+First, I will need to provide a detailed timeline which will be updated with achievements and/or failures. Second, possibly a weekly sync up with mentor, in order to provide efficient support. If required, deliverables to be redecided to avoid roadblocks and ensure that major work is completed within the time-frame.
 
 # Management of Coding Project
 
 ### How do you propose to ensure code is submitted / tested?
+
+Weekly Code Reviews, and approval of Mentor before finally pushing the major branch.
 
 I will publish a blog with demo of the minimal number of steps to get the application running. (Will try to publish a video also, but no promises)
 
 ### How often do you plan to commit?  What changes in commit behavior would indicate a problem?
 
 I plan to push to my branch once every 3-4 days.  
-If i haven't pushed in a week and my mentor is not aware of any emergency or personal commitments, then that would indicate a problem. This should never happen.
+If i haven't pushed in a week and my mentor is not aware of any emergency or personal commitments, then that would indicate a problem. This actually should never happen.
 
 # Final Test
 
 Describe the qualification test that you have submitted to you project mentors.  If feasible, include code, details, output, and example of similar coding problems that you have solved.
 
-Test will be quite simple. A simple script to be downloaded and run on a Linux system which will result in installing of a complete web portal for easier upload to EGA.
+Test will be quite simple. A simple script to be downloaded and run on a Linux system which will result in installing of a complete web portal for easier upload to EGA, and will satisfy all the stated features as above.
+
+
+
+# Additional Comments
+
+
+I would like to heartily thank David Bujold, for patiently answering several queries about the project and reviewing my selection test. He was able to point me in right direction and helped by providing ideas and action plan.
+
+##Selection test:
+    
+
+    Basic Implementation:
+        BitBucket Repo : [https://bitbucket.org/sainyamkapoor/simple_api_swag](https://bitbucket.org/sainyamkapoor/simple_api_swag)
+        Angular JS Application : [http://api.simpleapi.ml:8080/static/index.html](http://api.simpleapi.ml:8080/static/index.html)
+        Api End point : [http://api.simpleapi.ml:8080/api/v1.0/phone](http://api.simpleapi.ml:8080/api/v1.0/phone)
+    
+    Alternative Implementation with swagger(Recommended):
+        BitBucket Repo : [https://bitbucket.org/sainyamkapoor/simple_api_swag](https://bitbucket.org/sainyamkapoor/simple_api_swag)
+        Angular JS Application : [http://api.simpleapi.ml/static/index.html](http://api.simpleapi.ml/static/index.html)
+        Api End point : [http://api.simpleapi.ml/api/v1.0/phone](http://api.simpleapi.ml/api/v1.0/phone)
+        Swagger UI: [http://api.simpleapi.ml/api/spec.html](http://api.simpleapi.ml/api/spec.html)
+        
+    PUT,POST,GET requests are documented in the bitbucket repo.
