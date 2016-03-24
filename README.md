@@ -131,7 +131,7 @@ By Open-Sourcing the work, society will be motivated to reduce the time wasted o
     * Technical Details: Will use MVC based Architecture for this, application will be responsible for validating the consistency of Database at each updation(such as preventing user to delete a metadata set if it is used by at least one dataset). This will be done by adding a REST Endpoint to the API, and using Angular JS to update the webpage in action. Metadata to be stored in the database.
     * Expectations: By the end of this task, we should have fully functional Web Page for Sequencing runs metadata management, supporting options to manage Sequencing runs metadata over multiple squencing raw files.
 * Incorporate sample properties editor in the web application
-   * Logic: User should be able to Edit the properties of metadata on the application, instead of downloading, removing old entry and uploading new one.
+    * Logic: User should be able to Edit the properties of metadata on the application, instead of downloading, removing old entry and uploading new one.
    * Technical Details: Will add a Webpage to get the Metadata from Database, and add REST Endpoint to update the Metadata in the Database.
    * Expectations: By end of this task, we should be able to edit the metadata from the application itself.
 * Studying various OAuth based authentication systems.
@@ -163,7 +163,7 @@ By Open-Sourcing the work, society will be motivated to reduce the time wasted o
 * BioPortal ontologies integration
     * This involves using the bioportal.bioontology.org to map metadata properties to a given ontology, by creating a custom Handsontable editor.
     * Example: A sample has a property called "Cell Type," that should map to the UBERON ontology. The custom editor will enable searching the UBERON ontology, identify the right term, and store in the database the connected ontology URI.
-    * Bioportal has several tools that can be used for this kind of features. Example for UBERON: Try searching for "B Cell" in [https://bioportal.bioontology.org/ontologies/UBERON/?p=widgets](https://bioportal.bioontology.org/ontologies/UBERON/?p=widgets).
+    * Bioportal has several tools that can be used for this kind of features. 
 * Bioinformatics downstream analysis metadata
     * Sequencing runs need processing by various analysis software. Software with versions, parameters used, etc. need to be stored from the interface.
 * In Web Page for Sequencing runs metadata management, Raw data server location, and md5 checkums integration service.
@@ -203,18 +203,16 @@ From 5 July'16 to 24 July'16, OAuth-based authentication systems, BASH script wi
 
 From 24 July to 10 August'16, Incorporate sample properties editor, finally containerisation of the application
 
-From 10 Aug to 24 Aug'16, final documentation, functional testing, blog entry, video(no promises), clean up and final push.
+From 10 August to 24 August'16, final documentation, functional testing, blog entry, video(no promises), clean up and final push.
 
 
 ### Final Deliverable:
 
-An easier way for users to deploy their version of mEGAdata for upload to EGA Repository. The web application will be packed in the form of a container( full VM or Docker app) making it easier to deploy and maintain.
+In one line, An easier way for users to deploy their version of mEGAdata for upload to EGA Repository. The web application will be packed in the form of a container( full VM or Docker app) making it easier to deploy and maintain.
 
-All the Expectations in Must have features will be meet.
+All the Expectations in Must-Have features will be meet. A seperate API and a web application will be result of this activity, which will allow user to create new applications to meet their future needs. 
 
-A seperate API and a web Application will be result of this activity, which will allow user to create new applications to meet their future needs. 
-
-For users: a simple script to download and create the application locally for easier uploads to EGA.
+For end-users: a simple script to download and create the application locally for easier uploads to EGA.
 
 Note: More defined deliverables have already been listed in Coding Plans & Methods.
 
@@ -231,7 +229,8 @@ Since the project is defined with concrete modules, with expectations listed fro
 
 After approval of Mentor, code will be finally pushed to the main branch.
 
-I will publish a blog with the demo of the minimal number of steps to get the application running. (Will try to publish a video also, but no promises)
+
+I will also publish a blog with the demo of the minimal number of steps to get the application running. (Will try to publish a video also, but no promises)
 
 ### How often do you plan to commit?  What changes in commit behavior would indicate a problem?
 
@@ -256,10 +255,10 @@ Alternative Implementation with swagger(Recommended):
 * Swagger UI: [http://api.simpleapi.ml/api/spec.html](http://api.simpleapi.ml/api/spec.html)
     
     
-PUT, POST, GET requests are documented in the bitbucket repo.
+        PUT, POST, GET requests are documented in the bitbucket repo.
 
 
-## Credits:
+# Credits:
 
 I would like to thank David Bujold, for patiently answering queries about the project and reviewing my selection test. He was able to point me in the right direction and helped me by providing ideas and action plan. Thanks for bearing with my childish queries at times.
 
