@@ -132,8 +132,8 @@ By Open-Sourcing the work, society will be motivated to reduce the time wasted o
     * Expectations: By the end of this task, we should have fully functional Web Page for Sequencing runs metadata management, supporting options to manage Sequencing runs metadata over multiple squencing raw files.
 * Incorporate sample properties editor in the web application
     * Logic: User should be able to Edit the properties of metadata on the application, instead of downloading, removing old entry and uploading new one.
-   * Technical Details: Will add a Webpage to get the Metadata from Database, and add REST Endpoint to update the Metadata in the Database.
-   * Expectations: By end of this task, we should be able to edit the metadata from the application itself.
+    * Technical Details: Will add a Webpage to get the Metadata from Database, and add REST Endpoint to update the Metadata in the Database.
+    * Expectations: By end of this task, we should be able to edit the metadata from the application itself.
 * Studying various OAuth based authentication systems.
     * Logic: IPA(Identity, Policy, and Audit) are some of the important characteristics an application should support. But in this we  will study various ways to support Identity and Policy, Auditing will be a Nice to Have feature(will try to support in case time remains).
     * Technical Details: Read about OAuth vs  OpenID Connect, Google OAuth vs Mozilla Persona or Github Authenticator or any other service. Presently i am favouring Google OAuth but will try to find concrete proof to go ahead with that.
