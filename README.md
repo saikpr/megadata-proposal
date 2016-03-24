@@ -146,6 +146,10 @@ By Open-Sourcing the work, society will be motivated to reduce the time wasted o
     * Logic: End users favor packages that are functional and easy to install!
     * Technical Details: Based on Previous study, will use one of the Containerising technique.
     * Expectations: If the decision is docker, a dockerfile can be expected to be output. If it LxC, a script to generate the container can be expected.
+* Translate XML generation for EGA submission from perl to Python
+    * Logic: It would be easier  for developer to call a python script from the application instead of perl
+    * Technical Details: To call perl scripts, user will be required to open a subprocess, which would open up a whole lot of security vulnerabities. So instead we will call the python function directly.
+    * Expectations: By end, we should have a python script which would be functionally similar to the perl script
 * Search facility through donors, samples, datasets, and their metadata
     * Logic: Its easier for user to search instead of going through list of datasets.
     * Technical Details: Will add tagging to each of the entry(assays, sequencing runs etc), along with indexing of metadata into a SQLite Table for easier searching. This will include creation of REST Api End Point, and Angular JS page to consume the data form this End Point.
