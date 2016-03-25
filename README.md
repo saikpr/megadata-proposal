@@ -2,8 +2,8 @@
 
 - Project Title: EGA Data Submission database (mEGAdata)
 - Project short title (30 characters): mEGAdata
-- URL of project idea page: [mugqic/gsoc2016](https://bitbucket.org/mugqic/gsoc2016/overview#markdown-header-ega-data-submission-database-megadata) ((https://bitbucket.org/mugqic/gsoc2016)
-- Proposal Link : [Github](https://github.com/saikpr/megadata-proposal) (https://github.com/saikpr/megadata-proposal)
+- URL of project idea page: [mugqic/gsoc2016](https://bitbucket.org/mugqic/gsoc2016/overview#markdown-header-ega-data-submission-database-megadata) 
+- Proposal Link : [Github](https://github.com/saikpr/megadata-proposal)
 
 
 # Biographical Information
@@ -212,7 +212,7 @@ That's the beauty of open source.
 
 ### Describe perceived obstacles and challenges, and how you plan to overcome them.
 
-Flask-Stormpath, which is a requirement for the project, is still on python2.7 (they are waiting for Facebook-Python-sdk to be upgraded to python3, but they will be cutting a new release in a week or so, which will build without Facebook integration [Issue #26](https://github.com/stormpath/stormpath-flask/issues/26) (https://github.com/stormpath/stormpath-flask/issues/26). Possibly shift to some other OAuth based authentication system.
+Flask-Stormpath, which is a requirement for the project, is still on python2.7 (they are waiting for Facebook-Python-sdk to be upgraded to python3, but they will be cutting a new release in a week or so, which will build without Facebook integration [Issue #26](https://github.com/stormpath/stormpath-flask/issues/26) . Possibly shift to some other OAuth based authentication system.
 
 In searching, it will be a challenge to maintain the hierarchy of access. I.e. either limiting the users to their group’s information or their experiments only. Initially, I will limit to user's data only.
 
