@@ -10,6 +10,7 @@
 
 My Name is Sainyam Kapoor, and I am a 4th Year Integrated Dual Degree Student at Indian Institute of Technology (BHU), Varanasi (IIT BHU). I am a technology enthusiast, and my belief is to use coding or any activity (as such) for the greater good of society or at the very least myself. I have a strong background in Python, C & C++. I have previously done an internship with Data Science Team at Goldman Sachs, where I build a model for anomaly detection in GS's Internal Cloud, and I made a REST API as part of the final project.
 
+CV link : [CV](https://goo.gl/tDvyJP)
 
 ## My Research work.
 
