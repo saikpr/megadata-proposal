@@ -2,7 +2,8 @@
 
 - Project Title: EGA Data Submission database (mEGAdata)
 - Project short title (30 characters): mEGAdata
-- URL of project idea page: [Mugqic/gsoc2016](https://bitbucket.org/mugqic/gsoc2016/overview#markdown-header-ega-data-submission-database-megadata)
+- URL of project idea page: [mugqic/gsoc2016](https://bitbucket.org/mugqic/gsoc2016/overview#markdown-header-ega-data-submission-database-megadata) ((https://bitbucket.org/mugqic/gsoc2016)
+- Proposal Link : [Github](https://github.com/saikpr/megadata-proposal) (https://github.com/saikpr/megadata-proposal)
 
 
 # Biographical Information
@@ -20,7 +21,7 @@ I have worked on predicting software clone evolution; we decided to take forward
 - Mélange Link_id:  Mélange User:saikpr, Link ID has been discontinued from GSoC's Site.
 - Student postal address: House number 453, Sector - 7, Urban Estate, Gurgaon-122001, Haryana, India
 - Telephone(s): (+91)-860-120-1034
-- Email(s): [Sainyam Kapoor](<sainyam1994@gmail.com>), [Alternate Email](<sainyam.kapoor.cse12@itbhu.ac.in>)
+- Email(s): sainyam1994@gmail.com;
 - Other communications channels: Skype/Google+, etc.: Skype:saikpr, GitHub:saikpr, BitBucket:sainyamkapoor
 
 ## Student Affiliation
@@ -28,7 +29,7 @@ I have worked on predicting software clone evolution; we decided to take forward
 - Institution: Indian Institute of Technology, Banaras Hindu University, Varanasi (IIT-BHU)
 - Program: Integrated Dual Degree in Computer Science and Engineering (Bachelors and Masters)
 - Stage of completion: Currently in 4th Year. I have almost completed my Bachelor Courses, partial Master credits also gained. Expected to complete by May 2017.
-- Contact to verify: Dr. K.K. Shukla, Head, Computer Science and Engineering. ([Dr. K.K. Shukla](<kkshukle.cse@iitbhu.ac.in>))
+- Contact to verify: Dr. K.K. Shukla, Head, Computer Science and Engineering. ([Dr. K.K. Shukla](<kkshukla.cse@iitbhu.ac.in>) (kkshukla.cse@iitbhu.ac.in))
 
 # Schedule Conflicts
 
@@ -211,7 +212,7 @@ That's the beauty of open source.
 
 ### Describe perceived obstacles and challenges, and how you plan to overcome them.
 
-Flask-Stormpath, which is a requirement for the project, is still on python2.7 (they are waiting for Facebook-Python-sdk to be upgraded to python3, but they will be cutting a new release in a week or so, which will build without Facebook integration [Issue #26](https://github.com/stormpath/stormpath-flask/issues/26). Possibly shift to some other OAuth based authentication system.
+Flask-Stormpath, which is a requirement for the project, is still on python2.7 (they are waiting for Facebook-Python-sdk to be upgraded to python3, but they will be cutting a new release in a week or so, which will build without Facebook integration [Issue #26](https://github.com/stormpath/stormpath-flask/issues/26) (https://github.com/stormpath/stormpath-flask/issues/26). Possibly shift to some other OAuth based authentication system.
 
 In searching, it will be a challenge to maintain the hierarchy of access. I.e. either limiting the users to their group’s information or their experiments only. Initially, I will limit to user's data only.
 
@@ -299,7 +300,7 @@ Alternative Implementation with swagger (Recommended):
 * BitBucket Repo: [https://bitbucket.org/sainyamkapoor/simple_api_swag](https://bitbucket.org/sainyamkapoor/simple_api_swag)
 * Angular JS Application: [http://api.simpleapi.ml/static/index.html](http://api.simpleapi.ml/static/index.html)
 * Api End point: [http://api.simpleapi.ml/api/v1.0/phone](http://api.simpleapi.ml/api/v1.0/phone)
-* Swagger UI: [http://api.simpleapi.ml/api/spec.html](http://api.simpleapi.ml/api/spec.html)
+* Swagger UI: [http://api.simpleapi.ml/api/spec.html](http://api.simpleapi.ml/api/spec.html)  <--Recommended
     
     
         PUT, POST, GET requests are documented in the bitbucket repo.
@@ -307,7 +308,9 @@ Alternative Implementation with swagger (Recommended):
 
 # Credits:
 
-I would like to thank David Bujold, for patiently answering my queries about the project and reviewing my selection test. He was able to point me in the right direction and helped me by providing ideas and action plan. Thanks for bearing with my childish queries at times.
+I would like to thank David Bujold, for patiently answering my queries about the project and reviewing my selection test. He was able to point me in the right direction and helped me by providing ideas and action plan. 
+
+David, Thanks for bearing with my childish queries at times.
 
 
 -----------------------------
